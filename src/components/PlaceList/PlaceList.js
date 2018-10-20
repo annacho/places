@@ -1,0 +1,35 @@
+/* @flow weak */
+
+import React from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList
+} from 'react-native';
+
+import ListItem from '../ListItem/ListItem';
+
+const placeList = props => (
+  return (
+    <FlatList
+      style={styles.listContainer}
+      data={props.places}
+      renderItem={(info) => (
+        <ListItem
+          placeName={info.item.name}
+          placeImage={info.item.image}
+          onItemPressed={() => props.onItemSelected(i)}
+        />
+      )}
+    />
+  );
+);
+
+export default placeList;
+
+const styles = StyleSheet.create({
+  listContainer: {
+    width: "100%"
+  }
+});
