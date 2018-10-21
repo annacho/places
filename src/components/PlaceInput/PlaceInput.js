@@ -9,7 +9,7 @@ import {
   Button
 } from 'react-native';
 
-export default class PlaceInput extends Component {
+class PlaceInput extends Component {
   state = {
     placeName: "",
     places: []
