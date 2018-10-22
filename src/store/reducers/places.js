@@ -21,7 +21,7 @@ export default const reducer = (state = initialState, action) => {
       return {
         ...state,
         places: state.places.filter(place => {
-          return place.key !== state.selectedPlace.key;
+          return place.key !== action.placeKey;
         })
       };
     default:
