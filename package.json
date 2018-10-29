@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "^0.57.4",
+    "react-native-maps": "^0.22.0",
+    "react-native-pod": "^1.10.2"
   }
 }

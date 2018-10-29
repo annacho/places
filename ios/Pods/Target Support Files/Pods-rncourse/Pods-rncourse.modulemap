@@ -1,0 +1,6 @@
+framework module Pods_rncourse {
+  umbrella header "Pods-rncourse-umbrella.h"
+
+  export *
+  module * { export * }
+}
