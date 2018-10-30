@@ -4,7 +4,7 @@ const initialState = {
   places: []
 };
 
-export default const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_PLACE:
       return {
@@ -13,8 +13,10 @@ export default const reducer = (state = initialState, action) => {
           key: Math.random(),
           name: action.placeName,
           image: {
-            uri: "xxx"
-          }
+            uri:
+              "https://c1.staticflickr.com/5/4096/4744241983_34023bf303_b.jpg"
+          },
+          location: action.location
         })
       };
     case DELETE_PLACE:
@@ -28,3 +30,5 @@ export default const reducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export default reducer;
