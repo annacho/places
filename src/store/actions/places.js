@@ -73,7 +73,7 @@ export const setPlaces = places => {
 
 export const deletePlace = (key) => {
   return dispatch => {
-    dispatch(removePlace());
+    dispatch(removePlace(key));
     fetch("https://rn-course-1540813933074.firebaseio.com/places/" + key + ".json", {
       method: "DELETE"
     });
